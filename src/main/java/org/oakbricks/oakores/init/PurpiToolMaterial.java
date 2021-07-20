@@ -1,8 +1,9 @@
 package org.oakbricks.oakores.init;
 
+import java.util.function.Supplier;
+
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
-import java.util.function.Supplier;
 
 public enum PurpiToolMaterial implements IItemTier {
 

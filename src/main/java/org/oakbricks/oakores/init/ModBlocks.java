@@ -1,15 +1,9 @@
 package org.oakbricks.oakores.init;
 
-
-import net.minecraft.item.Item;
-import net.minecraft.item.Rarity;
-import net.minecraft.util.registry.Registry;
-
 import org.oakbricks.oakores.OakOres;
 import org.oakbricks.oakores.blocks.PurpiBlock;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -18,9 +12,7 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
-
-//@net.minecraftforge.registries.ObjectHolder("oakores")
-public class ModBlocks/* extends AbstractModule*/ {
+public class ModBlocks {
 
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
 			OakOres.MOD_ID);

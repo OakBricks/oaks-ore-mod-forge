@@ -1,19 +1,20 @@
 package org.oakbricks.oakores.init;
 
+import org.oakbricks.oakores.OakOres;
+import org.oakbricks.oakores.items.LeadRockItem;
+
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.Item.Properties;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.oakbricks.oakores.OakOres;
 
 public class ModItems {
 
@@ -49,5 +50,5 @@ public class ModItems {
     
     public static final RegistryObject<ArmorItem> PURPI_BOOTS = ITEMS.register("purpi_boots", () -> new ArmorItem(PurpiArmorMaterial.PURPI_ARMOR, EquipmentSlotType.FEET, new Item.Properties().group(OakOres.MAIN_GROUP)));
     
-    public static final RegistryObject<Item> LEAD_ROCK = ITEMS.register("lead_rock", () -> new Item(new Item.Properties().group(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<Item> LEAD_ROCK = ITEMS.register("lead_rock", () -> new LeadRockItem(new Item.Properties().group(OakOres.MAIN_GROUP)));
 }

@@ -8,6 +8,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 
+
 public enum PurpiArmorMaterial implements IArmorMaterial  {
 	PURPI_ARMOR("purpi", 10, new int[] { 4, 7, 9, 4 }, 17, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4f, 0.2f,
 			() -> Ingredient.fromItems(ModItems.PURPI.get()));

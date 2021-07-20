@@ -1,5 +1,11 @@
 package org.oakbricks.oakores;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.oakbricks.oakores.init.ModBlocks;
+import org.oakbricks.oakores.init.ModItems;
+import org.oakbricks.oakores.world.PurpiOreGen;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -11,11 +17,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.oakbricks.oakores.init.ModBlocks;
-import org.oakbricks.oakores.init.ModItems;
-import org.oakbricks.oakores.world.PurpiOreGen;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("oakores")
@@ -26,7 +27,7 @@ public class OakOres
 	
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger(MOD_ID);
-    public static final ItemGroup MAIN_GROUP = new TutorialGroup("oakorestab");
+    public static final ItemGroup MAIN_GROUP = new MainGroup("oakorestab");
 
     public OakOres() {
 
@@ -47,9 +48,9 @@ public class OakOres
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
     
-    public static class TutorialGroup extends ItemGroup {
+    public static class MainGroup extends ItemGroup {
 
-		public TutorialGroup(String label) {
+		public MainGroup(String label) {
 			super(label);
 		}
 
