@@ -50,7 +50,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> LEAD_BLOCK = BLOCKS
 			.register("lead_block", 
 					() -> new Block(Block.Properties.of(Material.METAL, MaterialColor.STONE)
-							.strength(8.5f, 17.5f).harvestTool(ToolType.PICKAXE).harvestLevel(2)
+							.strength(8.5f, 17.5f).harvestTool(ToolType.PICKAXE).harvestLevel(3)
 							.sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
 	public static final RegistryObject<OreBlock> ENDERITE_ORE = BLOCKS.register("enderite_ore", () -> new EnderiteOreBlock(OreBlock.Properties.of(Material.STONE, MaterialColor.SAND).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().strength(5.0F, 10.0F), UniformInt.of(8, 16)));
