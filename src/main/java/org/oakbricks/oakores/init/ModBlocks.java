@@ -57,9 +57,4 @@ public class ModBlocks {
 
 	public static final RegistryObject<Block> ENDERITE_BLOCK = BLOCKS.register("enderite_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL, MaterialColor.TERRACOTTA_CYAN).sound(SoundType.METAL).harvestLevel(2).strength(4.5F, 9.5F).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
 	
-	
-	//public static final Block OTHER_BLOCK = Registry.register(Registry.BLOCK, "other_block", new Block(Block.Properties.of(Material.ROCK)));
-	
-
-	
 }
