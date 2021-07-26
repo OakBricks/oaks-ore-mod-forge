@@ -25,10 +25,10 @@ public class OakOresWorldGen {
 					ModBlocks.LEAD_ORE.get().defaultBlockState(), 5, 0, 48, 25);
 			generateOre(event.getGeneration(), OreConfiguration.Predicates.DEEPSLATE_ORE_REPLACEABLES,
 					ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), 5, 0, 48, 25);
-		} else if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER)) || (event.getCategory().equals(Biome.BiomeCategory.THEEND))) {
+		}/* else if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER)) || (event.getCategory().equals(Biome.BiomeCategory.THEEND))) {
 			generateOreBottomMinTopMax(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
 					ModBlocks.PURPI_ORE.get().defaultBlockState(), 3, 8);
-		}
+		}*/
 	}
 
 	private static void generateOre(BiomeGenerationSettingsBuilder settings, RuleTest fillerType, BlockState state, int veinSize, int minHeight, int maxHeight, int amount) {
