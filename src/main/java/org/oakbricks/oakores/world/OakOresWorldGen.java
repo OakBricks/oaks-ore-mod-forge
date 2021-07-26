@@ -21,8 +21,8 @@ public class OakOresWorldGen {
 		if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER) || event.getCategory().equals(Biome.BiomeCategory.THEEND))) {
 			generateOre(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
 					ModBlocks.PURPI_ORE.get().defaultBlockState(), 6, 5, 28, 10);
-			generateOre(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
-					ModBlocks.LEAD_ORE.get().defaultBlockState(), 5, 0, 48, 25);
+			generateOreBottomMinTopMax(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
+					ModBlocks.LEAD_ORE.get().defaultBlockState(), 5, 25);
 			generateOre(event.getGeneration(), OreConfiguration.Predicates.DEEPSLATE_ORE_REPLACEABLES,
 					ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), 5, 0, 48, 25);
 		}/* else if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER)) || (event.getCategory().equals(Biome.BiomeCategory.THEEND))) {
