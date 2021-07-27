@@ -17,7 +17,7 @@ public final class OakOresConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> purpiAmount;
 
     static {
-        BUILDER.push("Config for Tutorial Mod!");
+        BUILDER.push("Config for OakOres");
 
         purpiVeinSize = BUILDER.comment("This is an integer. Default value is 6.").define("Purpi Ore Vein Size", 6);
         purpiMinHeight = BUILDER.comment("This is an integer. Default value is 5.").define("Purpi Ore Vein Size", 5);
