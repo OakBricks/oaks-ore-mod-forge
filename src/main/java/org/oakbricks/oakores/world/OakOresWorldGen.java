@@ -25,7 +25,7 @@ public class OakOresWorldGen {
 					ModBlocks.LEAD_ORE.get().defaultBlockState(), OakOresConfig.leadVeinSize.get(), OakOresConfig.leadAmount.get());
 			// Deepslate Lead Ore Gen
 			generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.DEEPSLATE_ONLY,
-					ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), 5, 25);
+					ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), 3, 4);
 		} else if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER)) && (event.getCategory().equals(Biome.BiomeCategory.THEEND)) && OakOresConfig.enableEnderite.equals(true)) {
 			generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.ENDSTONE_ONLY,
 					ModBlocks.ENDERITE_ORE.get().defaultBlockState(), 5, 8);
