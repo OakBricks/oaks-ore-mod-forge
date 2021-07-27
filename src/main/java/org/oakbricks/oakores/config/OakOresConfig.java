@@ -36,14 +36,14 @@ public final class OakOresConfig {
 
         BUILDER.push("Config for OakOres - Lead Gen");
 
-        leadVeinSize = BUILDER.comment("Size of Lead Ore veins, default value is 5").worldRestart().define("Lead Ore Vein Size", 16);
+        leadVeinSize = BUILDER.comment("Size of Lead Ore veins, default value is 16").worldRestart().define("Lead Ore Vein Size", 16);
         leadAmount = BUILDER.comment("Amount of Lead Ore in a world, default value is 25").worldRestart().define("Lead Ore Amount", 25);
 
         BUILDER.pop();
 
         BUILDER.push("Config for OakOres - Deepslate Lead Gen");
 
-        deepLeadVeinSize = BUILDER.comment("Size of Deepslate Lead Ore veins, default value is 3").worldRestart().define("Deepslate Lead Ore Vein Size", 9);
+        deepLeadVeinSize = BUILDER.comment("Size of Deepslate Lead Ore veins, default value is 9").worldRestart().define("Deepslate Lead Ore Vein Size", 9);
         deepLeadAmount = BUILDER.comment("Amount of Deepslate Lead Ore in a world, default value is 4").worldRestart().define("Deepslate Lead Ore Amount", 4);
 
 
