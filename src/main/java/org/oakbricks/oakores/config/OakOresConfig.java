@@ -30,7 +30,7 @@ public final class OakOresConfig {
 
         BUILDER.push("Config for OakOres - Purpi Gen");
 
-        purpiVeinSize = BUILDER.comment("Size of a Purpi Ore vein, default value is 6.").worldRestart().define("Purpi Ore Vein Size", 6);
+        purpiVeinSize = BUILDER.comment("Size of a Purpi Ore vein, default value is 6.").worldRestart().defineInRange("Purpi Ore Vein Size", 6, 1, 32);
         purpiMinHeight = BUILDER.comment("Minimum height for Purpi Ore to generate in a world, default value is 5.").worldRestart().define("Purpi Ore Minimum Height", 5);
         purpiMaxHeight = BUILDER.comment("Maximum height for Purpi Ore to generate in a world, default value is 28.").worldRestart().define("Purpi Ore Maximum Height", 28);
         purpiAmount = BUILDER.comment("Amount of Purpi Ore in a world, default value is 10").worldRestart().define("Purpi Ore Amount", 10);
