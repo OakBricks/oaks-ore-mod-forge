@@ -1,10 +1,5 @@
 package org.oakbricks.oakores.config;
 
-import com.supermartijn642.configlib.ModConfig;
-import com.supermartijn642.configlib.ModConfigBuilder;
-
-import java.util.function.Supplier;
-
 import net.minecraftforge.common.ForgeConfigSpec;
 
 public final class OakOresConfig {
