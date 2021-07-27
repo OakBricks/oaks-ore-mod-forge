@@ -1,7 +1,10 @@
 package org.oakbricks.oakores;
 
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.config.ModConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.oakbricks.oakores.config.OakOresConfig;
 import org.oakbricks.oakores.init.ModBlocks;
 import org.oakbricks.oakores.init.ModItems;
 import org.oakbricks.oakores.world.OakOresWorldGen;
@@ -38,6 +41,8 @@ public class OakOres
         ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, OakOresConfig.SPEC, "oakores-common.toml");
                 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
