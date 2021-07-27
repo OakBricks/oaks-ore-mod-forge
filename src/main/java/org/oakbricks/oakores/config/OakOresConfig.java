@@ -7,6 +7,7 @@ public final class OakOresConfig {
     public static final ForgeConfigSpec SPEC;
 
     public static final ForgeConfigSpec.ConfigValue<Boolean> enableEnderite;
+    public static final ForgeConfigSpec.ConfigValue<Boolean> enableNetherOres;
 
     public static final ForgeConfigSpec.ConfigValue<Integer> purpiVeinSize;
     public static final ForgeConfigSpec.ConfigValue<Integer> purpiMinHeight;
@@ -24,6 +25,8 @@ public final class OakOresConfig {
         BUILDER.push("Config for OakOres - Master");
 
         enableEnderite = BUILDER.comment("Enables OakOres' Enderite support").worldRestart().define("Enable OakOres' Enderite support", true);
+
+        enableNetherOres = BUILDER.comment("Enables OakOres' ability to generate ores in the nether").worldRestart().define("Enable OakOres' Nether Ores", true);
 
         BUILDER.push("Config for OakOres - Purpi Gen");
 
