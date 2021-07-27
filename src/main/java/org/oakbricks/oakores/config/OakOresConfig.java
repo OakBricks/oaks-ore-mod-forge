@@ -6,6 +6,8 @@ public final class OakOresConfig {
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SPEC;
 
+    public static final ForgeConfigSpec.ConfigValue<Boolean> enableEnderite;
+
     public static final ForgeConfigSpec.ConfigValue<Integer> purpiVeinSize;
     public static final ForgeConfigSpec.ConfigValue<Integer> purpiMinHeight;
     public static final ForgeConfigSpec.ConfigValue<Integer> purpiMaxHeight;
@@ -15,6 +17,11 @@ public final class OakOresConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> leadVeinSize;
 
     static {
+
+        BUILDER.push("Config for OakOres - Master");
+
+        enableEnderite = BUILDER.comment("Enables OakOres' Enderite support").define("Enable OakOres' Enderite support", true);
+
         BUILDER.push("Config for OakOres - Purpi Gen");
 
         purpiVeinSize = BUILDER.comment("Size of a Purpi Ore vein, default value is 6.").define("Purpi Ore Vein Size", 6);
