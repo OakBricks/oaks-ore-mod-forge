@@ -32,8 +32,8 @@ public class OakOresWorldGen {
 				generateOre(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.STONE_ONLY,
 						ModBlocks.PURPI_ORE.get().defaultBlockState(), OakOresConfig.purpiVeinSize.get(), OakOresConfig.purpiMinHeight.get(), OakOresConfig.purpiMaxHeight.get(), OakOresConfig.purpiAmount.get());
 				// Lead Ore Gen
-				generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.STONE_ONLY,
-						ModBlocks.LEAD_ORE.get().defaultBlockState(), OakOresConfig.leadVeinSize.get(), OakOresConfig.leadAmount.get());
+				generateOreBottomMin(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.STONE_ONLY,
+						ModBlocks.LEAD_ORE.get().defaultBlockState(), OakOresConfig.leadVeinSize.get(), OakOresConfig.leadMaxHeight.get(), OakOresConfig.leadAmount.get());
 				// Deepslate Lead Ore Gen
 				generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.DEEPSLATE_ONLY,
 						ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), OakOresConfig.deepLeadVeinSize.get(), OakOresConfig.deepLeadAmount.get());

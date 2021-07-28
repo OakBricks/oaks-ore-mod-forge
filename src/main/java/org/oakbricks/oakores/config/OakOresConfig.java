@@ -16,6 +16,7 @@ public final class OakOresConfig {
 
     public static final ForgeConfigSpec.ConfigValue<Integer> leadAmount;
     public static final ForgeConfigSpec.ConfigValue<Integer> leadVeinSize;
+    public static final ForgeConfigSpec.ConfigValue<Integer> leadMaxHeight;
 
     public static final ForgeConfigSpec.ConfigValue<Integer> deepLeadAmount;
     public static final ForgeConfigSpec.ConfigValue<Integer> deepLeadVeinSize;
@@ -35,8 +36,8 @@ public final class OakOresConfig {
         BUILDER.push("Config for OakOres - Purpi Ore Gen");
 
         purpiVeinSize = BUILDER.comment("Size of a Purpi Ore vein, default value is 6, maximum value of 64.").worldRestart().defineInRange("Purpi Ore Vein Size", 6, 0, 64);
-        purpiMinHeight = BUILDER.comment("Minimum height for Purpi Ore to generate in a world, default value is 5, maximum value of 250.").worldRestart().defineInRange("Purpi Ore Minimum Height", 5, 0, 250);
-        purpiMaxHeight = BUILDER.comment("Maximum height for Purpi Ore to generate in a world, default value is 28, maximum value of 256.").worldRestart().defineInRange("Purpi Ore Maximum Height", 28, 6, 256);
+        purpiMinHeight = BUILDER.comment("Minimum height for Purpi Ore to generate in a world, default value is 5, maximum value of 256.").worldRestart().defineInRange("Purpi Ore Minimum Height", 5, 0, 256);
+        purpiMaxHeight = BUILDER.comment("Maximum height for Purpi Ore to generate in a world, default value is 28, maximum value of 256.").worldRestart().defineInRange("Purpi Ore Maximum Height", 28, 0, 256);
         purpiAmount = BUILDER.comment("Amount of Purpi Ore in a world, default value is 10, maximum value of 64").worldRestart().defineInRange("Purpi Ore Amount", 10, 0, 64);
 
         BUILDER.pop();
@@ -45,6 +46,7 @@ public final class OakOresConfig {
 
         leadVeinSize = BUILDER.comment("Size of Lead Ore veins, default value is 16, maximum value of 64.").worldRestart().defineInRange("Lead Ore Vein Size", 16, 0, 64);
         leadAmount = BUILDER.comment("Amount of Lead Ore in a world, default value is 25, maximum value of 64.").worldRestart().defineInRange("Lead Ore Amount", 25, 0, 64);
+        leadMaxHeight = BUILDER.comment("Maximum height for Purpi Ore to generate in a world, default value is 28, maximum value of 256.").worldRestart().defineInRange("Purpi Ore Maximum Height", 256, 0, 256);
 
         BUILDER.pop();
 
