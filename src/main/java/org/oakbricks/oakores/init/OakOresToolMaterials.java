@@ -3,9 +3,11 @@ package org.oakbricks.oakores.init;
 import java.util.function.Supplier;
 
 
+import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
+@MethodsReturnNonnullByDefault
 public enum OakOresToolMaterials implements Tier {
     PURPI_TOOL(3, 1600, 8f, 3f, 20, () -> Ingredient.of(ModItems.PURPI.get()));
 
