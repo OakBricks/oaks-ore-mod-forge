@@ -17,15 +17,28 @@ public class OakOresWorldGen {
 
 	public static void generateOres(final BiomeLoadingEvent event) {
 		if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER) || event.getCategory().equals(Biome.BiomeCategory.THEEND))) {
-			// Purpi Ore Gen
-			generateOre(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
-					ModBlocks.PURPI_ORE.get().defaultBlockState(), OakOresConfig.purpiVeinSize.get(), OakOresConfig.purpiMinHeight.get(), OakOresConfig.purpiMaxHeight.get(), OakOresConfig.purpiAmount.get());
-			// Lead Ore Gen
-			generateOreBottomMinTopMax(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
-					ModBlocks.LEAD_ORE.get().defaultBlockState(), OakOresConfig.leadVeinSize.get(), OakOresConfig.leadAmount.get());
-			// Deepslate Lead Ore Gen
-			generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.DEEPSLATE_ONLY,
-					ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), OakOresConfig.deepLeadVeinSize.get(), OakOresConfig.deepLeadAmount.get());
+			if (OakOresConfig.fixOresSpawningInNonStoneBlocks.get().equals(false)) {
+				// Purpi Ore Gen
+				generateOre(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
+						ModBlocks.PURPI_ORE.get().defaultBlockState(), OakOresConfig.purpiVeinSize.get(), OakOresConfig.purpiMinHeight.get(), OakOresConfig.purpiMaxHeight.get(), OakOresConfig.purpiAmount.get());
+				// Lead Ore Gen
+				generateOreBottomMinTopMax(event.getGeneration(), OreConfiguration.Predicates.NATURAL_STONE,
+						ModBlocks.LEAD_ORE.get().defaultBlockState(), OakOresConfig.leadVeinSize.get(), OakOresConfig.leadAmount.get());
+				// Deepslate Lead Ore Gen
+				generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.DEEPSLATE_ONLY,
+						ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), OakOresConfig.deepLeadVeinSize.get(), OakOresConfig.deepLeadAmount.get());
+			} else if (OakOresConfig.fixOresSpawningInNonStoneBlocks.get().equals(true)) {
+				// Purpi Ore Gen
+				generateOre(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.STONE_ONLY,
+						ModBlocks.PURPI_ORE.get().defaultBlockState(), OakOresConfig.purpiVeinSize.get(), OakOresConfig.purpiMinHeight.get(), OakOresConfig.purpiMaxHeight.get(), OakOresConfig.purpiAmount.get());
+				// Lead Ore Gen
+				generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.STONE_ONLY,
+						ModBlocks.LEAD_ORE.get().defaultBlockState(), OakOresConfig.leadVeinSize.get(), OakOresConfig.leadAmount.get());
+				// Deepslate Lead Ore Gen
+				generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.DEEPSLATE_ONLY,
+						ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), OakOresConfig.deepLeadVeinSize.get(), OakOresConfig.deepLeadAmount.get());
+			}
+
 		} else if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER)) && (event.getCategory().equals(Biome.BiomeCategory.THEEND)) && OakOresConfig.enableEnderite.get().equals(true)) {
 			generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.ENDSTONE_ONLY,
 					ModBlocks.ENDERITE_ORE.get().defaultBlockState(), OakOresConfig.enderiteVeinSize.get(), OakOresConfig.enderiteAmount.get());

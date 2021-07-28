@@ -22,6 +22,7 @@ public final class OakOresConfig {
 
     public static final ForgeConfigSpec.ConfigValue<Integer> enderiteAmount;
     public static final ForgeConfigSpec.ConfigValue<Integer> enderiteVeinSize;
+    public static final ForgeConfigSpec.ConfigValue<Boolean> fixOresSpawningInNonStoneBlocks;
 
     static {
 
@@ -60,6 +61,12 @@ public final class OakOresConfig {
         enderiteVeinSize = BUILDER.comment("Size of Enderite Ore veins, default value is 5, maximum value of 64.").worldRestart().defineInRange("Enderite Ore Vein Size", 5, 0, 64);
         enderiteAmount = BUILDER.comment("Amount of Enderite Ore in a world, default value is 8, maximum value of 64.").worldRestart().defineInRange("Enderite Ore Amount", 8, 0, 64);
 
+
+        BUILDER.pop();
+
+        BUILDER.push("Config for OakOres - Fixes");
+
+        fixOresSpawningInNonStoneBlocks = BUILDER.comment("Fixes ores spawning in non-stone blocks").worldRestart().define("Fix Ores spawning in Blocks that are not stone", true);
 
         BUILDER.pop();
 
