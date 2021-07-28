@@ -28,7 +28,7 @@ public final class OakOresConfig {
 
         enableNetherOres = BUILDER.comment("Enables OakOres' ability to generate ores in the nether").worldRestart().define("Enable OakOres' Nether Ores", true);
 
-        BUILDER.push("Config for OakOres - Purpi Gen");
+        BUILDER.push("Config for OakOres - Purpi Ore Gen");
 
         purpiVeinSize = BUILDER.comment("Size of a Purpi Ore vein, default value is 6, maximum value of 64.").worldRestart().defineInRange("Purpi Ore Vein Size", 6, 0, 64);
         purpiMinHeight = BUILDER.comment("Minimum height for Purpi Ore to generate in a world, default value is 5, maximum value of 250.").worldRestart().defineInRange("Purpi Ore Minimum Height", 5, 0, 250);
@@ -37,14 +37,14 @@ public final class OakOresConfig {
 
         BUILDER.pop();
 
-        BUILDER.push("Config for OakOres - Lead Gen");
+        BUILDER.push("Config for OakOres - Lead Ore Gen");
 
         leadVeinSize = BUILDER.comment("Size of Lead Ore veins, default value is 16, maximum value of 64.").worldRestart().defineInRange("Lead Ore Vein Size", 16, 0, 64);
         leadAmount = BUILDER.comment("Amount of Lead Ore in a world, default value is 25, maximum value of 64.").worldRestart().defineInRange("Lead Ore Amount", 25, 0, 64);
 
         BUILDER.pop();
 
-        BUILDER.push("Config for OakOres - Deepslate Lead Gen");
+        BUILDER.push("Config for OakOres - Deepslate Lead Ore Gen");
 
         deepLeadVeinSize = BUILDER.comment("Size of Deepslate Lead Ore veins, default value is 9, maximum value of 64.").worldRestart().defineInRange("Deepslate Lead Ore Vein Size", 9, 0, 64);
         deepLeadAmount = BUILDER.comment("Amount of Deepslate Lead Ore in a world, default value is 4, maximum value of 64.").worldRestart().defineInRange("Deepslate Lead Ore Amount", 4, 0, 64);
