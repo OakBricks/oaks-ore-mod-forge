@@ -36,23 +36,23 @@ public class ModItems {
 
     public static final RegistryObject<Item> ENDERITE_BLOCK = ITEMS.register("enderite_block", () -> new BlockItem(ModBlocks.ENDERITE_BLOCK.get(), new Item.Properties().tab(OakOres.MAIN_GROUP)));
 
-    public static final RegistryObject<SwordItem> PURPI_SWORD = ITEMS.register("purpi_sword", () -> new SwordItem(PurpiToolMaterial.PURPI_TOOL, 5, -2f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<SwordItem> PURPI_SWORD = ITEMS.register("purpi_sword", () -> new SwordItem(OakOresToolMaterials.PURPI_TOOL, 5, -2f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
     
-    public static final RegistryObject<ShovelItem> PURPI_SPADE = ITEMS.register("purpi_shovel", () -> new ShovelItem(PurpiToolMaterial.PURPI_TOOL, -2.5f, -3f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<ShovelItem> PURPI_SPADE = ITEMS.register("purpi_shovel", () -> new ShovelItem(OakOresToolMaterials.PURPI_TOOL, -2.5f, -3f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
     
-    public static final RegistryObject<PickaxeItem> PURPI_PICKAXE = ITEMS.register("purpi_pickaxe", () -> new PickaxeItem(PurpiToolMaterial.PURPI_TOOL, 3, -1.6f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<PickaxeItem> PURPI_PICKAXE = ITEMS.register("purpi_pickaxe", () -> new PickaxeItem(OakOresToolMaterials.PURPI_TOOL, 3, -1.6f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
     
-    public static final RegistryObject<AxeItem> PURPI_AXE = ITEMS.register("purpi_axe", () -> new AxeItem(PurpiToolMaterial.PURPI_TOOL, 2f, -1f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<AxeItem> PURPI_AXE = ITEMS.register("purpi_axe", () -> new AxeItem(OakOresToolMaterials.PURPI_TOOL, 2f, -1f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
     
-    public static final RegistryObject<HoeItem> PURPI_HOE = ITEMS.register("purpi_hoe", () -> new HoeItem(PurpiToolMaterial.PURPI_TOOL, -4, -2f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<HoeItem> PURPI_HOE = ITEMS.register("purpi_hoe", () -> new HoeItem(OakOresToolMaterials.PURPI_TOOL, -4, -2f, new Item.Properties().tab(OakOres.MAIN_GROUP)));
     
-    public static final RegistryObject<ArmorItem> PURPI_HELMET = ITEMS.register("purpi_helmet", () -> new ArmorItem(PurpiArmorMaterial.PURPI_ARMOR, EquipmentSlot.HEAD, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<ArmorItem> PURPI_HELMET = ITEMS.register("purpi_helmet", () -> new ArmorItem(OakOresArmorMaterials.PURPI_ARMOR, EquipmentSlot.HEAD, new Item.Properties().tab(OakOres.MAIN_GROUP)));
 
-    public static final RegistryObject<ArmorItem> PURPI_CHESTPLATE = ITEMS.register("purpi_chestplate", () -> new ArmorItem(PurpiArmorMaterial.PURPI_ARMOR, EquipmentSlot.CHEST, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<ArmorItem> PURPI_CHESTPLATE = ITEMS.register("purpi_chestplate", () -> new ArmorItem(OakOresArmorMaterials.PURPI_ARMOR, EquipmentSlot.CHEST, new Item.Properties().tab(OakOres.MAIN_GROUP)));
     
-    public static final RegistryObject<ArmorItem> PURPI_LEGGINGS = ITEMS.register("purpi_leggings", () -> new ArmorItem(PurpiArmorMaterial.PURPI_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<ArmorItem> PURPI_LEGGINGS = ITEMS.register("purpi_leggings", () -> new ArmorItem(OakOresArmorMaterials.PURPI_ARMOR, EquipmentSlot.LEGS, new Item.Properties().tab(OakOres.MAIN_GROUP)));
     
-    public static final RegistryObject<ArmorItem> PURPI_BOOTS = ITEMS.register("purpi_boots", () -> new ArmorItem(PurpiArmorMaterial.PURPI_ARMOR, EquipmentSlot.FEET, new Item.Properties().tab(OakOres.MAIN_GROUP)));
+    public static final RegistryObject<ArmorItem> PURPI_BOOTS = ITEMS.register("purpi_boots", () -> new ArmorItem(OakOresArmorMaterials.PURPI_ARMOR, EquipmentSlot.FEET, new Item.Properties().tab(OakOres.MAIN_GROUP)));
     
     public static final RegistryObject<Item> LEAD_ROCK = ITEMS.register("lead_rock", () -> new LeadRockItem(new Item.Properties().tab(OakOres.MAIN_GROUP)));
 

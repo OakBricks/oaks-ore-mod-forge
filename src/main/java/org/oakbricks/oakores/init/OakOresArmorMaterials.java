@@ -8,7 +8,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
-public enum PurpiArmorMaterial implements ArmorMaterial {
+public enum OakOresArmorMaterials implements ArmorMaterial {
 
     PURPI_ARMOR("purpi", 10, new int[] { 4, 7, 9, 4 }, 17, SoundEvents.ARMOR_EQUIP_GENERIC, 4f, 0.2f, () -> Ingredient.of(ModItems.PURPI.get()));
     
@@ -22,7 +22,7 @@ public enum PurpiArmorMaterial implements ArmorMaterial {
 	private final float knockbackResistance;
 	private final Ingredient repairIngredient;
 
-	PurpiArmorMaterial(String name, int durabilityMultiplier, int[] armorVal, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+	OakOresArmorMaterials(String name, int durabilityMultiplier, int[] armorVal, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
 		this.name = name;
 		this.durabilityMultiplier = durabilityMultiplier;
 		this.armorVal = armorVal;
@@ -46,7 +46,7 @@ public enum PurpiArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantmentValue() {
-        return 0;
+        return this.enchantability;
     }
 
     @Override
