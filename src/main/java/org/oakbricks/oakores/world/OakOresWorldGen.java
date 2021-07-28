@@ -28,7 +28,7 @@ public class OakOresWorldGen {
 					ModBlocks.DEEPSLATE_LEAD_ORE.get().defaultBlockState(), OakOresConfig.deepLeadVeinSize.get(), OakOresConfig.deepLeadAmount.get());
 		} else if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER)) && (event.getCategory().equals(Biome.BiomeCategory.THEEND)) && OakOresConfig.enableEnderite.get().equals(true)) {
 			generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.ENDSTONE_ONLY,
-					ModBlocks.ENDERITE_ORE.get().defaultBlockState(), 5, 8);
+					ModBlocks.ENDERITE_ORE.get().defaultBlockState(), OakOresConfig.enderiteVeinSize.get(), OakOresConfig.enderiteAmount.get());
 		}/* else if (!(event.getCategory().equals(Biome.BiomeCategory.THEEND)) && (event.getCategory().equals(Biome.BiomeCategory.NETHER))) {
 
 		}*/
