@@ -20,6 +20,9 @@ public final class OakOresConfig {
     public static final ForgeConfigSpec.ConfigValue<Integer> deepLeadAmount;
     public static final ForgeConfigSpec.ConfigValue<Integer> deepLeadVeinSize;
 
+    public static final ForgeConfigSpec.ConfigValue<Integer> enderiteAmount;
+    public static final ForgeConfigSpec.ConfigValue<Integer> enderiteVeinSize;
+
     static {
 
         BUILDER.push("Config for OakOres - Master");
@@ -51,6 +54,15 @@ public final class OakOresConfig {
 
 
         BUILDER.pop();
+
+        BUILDER.push("Config for OakOres - Enderite Ore Gen");
+
+        enderiteVeinSize = BUILDER.comment("Size of Enderite Ore veins, default value is 5, maximum value of 64.").worldRestart().defineInRange("Enderite Ore Vein Size", 5, 0, 64);
+        enderiteAmount = BUILDER.comment("Amount of Enderite Ore in a world, default value is 8, maximum value of 64.").worldRestart().defineInRange("Enderite Ore Amount", 8, 0, 64);
+
+
+        BUILDER.pop();
+
         SPEC = BUILDER.build();
     }
 }
