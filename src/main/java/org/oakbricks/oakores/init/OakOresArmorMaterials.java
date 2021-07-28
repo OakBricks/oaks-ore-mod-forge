@@ -2,12 +2,14 @@ package org.oakbricks.oakores.init;
 
 import java.util.function.Supplier;
 
+import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
+@MethodsReturnNonnullByDefault
 public enum OakOresArmorMaterials implements ArmorMaterial {
 
     PURPI_ARMOR("purpi", 10, new int[] { 4, 7, 9, 4 }, 17, SoundEvents.ARMOR_EQUIP_GENERIC, 4f, 0.2f, () -> Ingredient.of(ModItems.PURPI.get()));
