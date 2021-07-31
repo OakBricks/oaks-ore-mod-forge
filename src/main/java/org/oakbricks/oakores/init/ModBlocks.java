@@ -33,7 +33,13 @@ public class ModBlocks {
 			.register("purpi_ore",
 					() -> new PurpiOreBlock(Block.Properties.of(Material.STONE, MaterialColor.STONE)
 							.strength(3.5f, 10.25f).harvestTool(ToolType.PICKAXE).harvestLevel(3)
-							.sound(SoundType.STONE).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+							.sound(SoundType.STONE).requiresCorrectToolForDrops(), UniformInt.of(3, 8)));
+
+	public static final RegistryObject<Block> NETHER_PURPI_ORE = BLOCKS
+			.register("purpi_ore",
+					() -> new PurpiOreBlock(Block.Properties.of(Material.STONE, MaterialColor.STONE)
+							.strength(3.25f, 8.25f).harvestTool(ToolType.PICKAXE).harvestLevel(3)
+							.sound(SoundType.STONE).requiresCorrectToolForDrops(), UniformInt.of(2, 9)));
 	
 	public static final RegistryObject<Block> LEAD_ORE = BLOCKS
 			.register("lead_ore",

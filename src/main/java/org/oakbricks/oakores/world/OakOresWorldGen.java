@@ -42,9 +42,10 @@ public class OakOresWorldGen {
 		} else if (!(event.getCategory().equals(Biome.BiomeCategory.NETHER)) && (event.getCategory().equals(Biome.BiomeCategory.THEEND)) && OakOresConfig.enableEnderite.get().equals(true)) {
 			generateOreBottomMinTopMax(event.getGeneration(), OakOresPredicates.OakOresCustomPredicates.ENDSTONE_ONLY,
 					ModBlocks.ENDERITE_ORE.get().defaultBlockState(), OakOresConfig.enderiteVeinSize.get(), OakOresConfig.enderiteAmount.get());
-		}/* else if (!(event.getCategory().equals(Biome.BiomeCategory.THEEND)) && (event.getCategory().equals(Biome.BiomeCategory.NETHER))) {
-
-		}*/
+		} else if (!(event.getCategory().equals(Biome.BiomeCategory.THEEND)) && (event.getCategory().equals(Biome.BiomeCategory.NETHER))) {
+			generateOreBottomMinTopMax(event.getGeneration(), OreConfiguration.Predicates.NETHER_ORE_REPLACEABLES,
+					ModBlocks.NETHER_PURPI_ORE.get().defaultBlockState(), OakOresConfig.purpiVeinSize.get(), OakOresConfig.purpiAmount.get());
+		}
 	}
 
 	private static void generateOre(BiomeGenerationSettingsBuilder settings, RuleTest fillerType, BlockState state, int veinSize, int minHeight, int maxHeight, int amount) {
