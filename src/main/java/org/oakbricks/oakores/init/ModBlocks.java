@@ -36,7 +36,7 @@ public class ModBlocks {
 							.sound(SoundType.STONE).requiresCorrectToolForDrops(), UniformInt.of(3, 8)));
 
 	public static final RegistryObject<Block> NETHER_PURPI_ORE = BLOCKS
-			.register("purpi_ore",
+			.register("nether_purpi_ore",
 					() -> new PurpiOreBlock(Block.Properties.of(Material.STONE, MaterialColor.STONE)
 							.strength(3.25f, 8.25f).harvestTool(ToolType.PICKAXE).harvestLevel(3)
 							.sound(SoundType.STONE).requiresCorrectToolForDrops(), UniformInt.of(2, 9)));
