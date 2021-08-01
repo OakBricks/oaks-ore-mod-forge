@@ -26,13 +26,13 @@ public class ModBlocks {
 	public static final RegistryObject<Block> PURPI_BLOCK = BLOCKS
 			.register("purpi_block",
 					() -> new Block(Block.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE)
-							.strength(6.5f, 10.5f).harvestTool(ToolType.PICKAXE).harvestLevel(3)
-							.sound(SoundType.METAL).requiresCorrectToolForDrops()));
+							.harvestLevel(3).strength(6.5f, 10.5f).requiresCorrectToolForDrops().harvestTool(ToolType.PICKAXE)
+							.sound(SoundType.METAL)));
 
 	public static final RegistryObject<Block> PURPI_ORE = BLOCKS
 			.register("purpi_ore",
 					() -> new PurpiOreBlock(Block.Properties.of(Material.STONE, MaterialColor.STONE)
-							.strength(3.5f, 10.25f).harvestTool(ToolType.PICKAXE).harvestLevel(3)
+							.strength(10.25f, 3.5f).harvestTool(ToolType.PICKAXE).harvestLevel(3)
 							.sound(SoundType.STONE).requiresCorrectToolForDrops(), UniformInt.of(3, 8)));
 
 	public static final RegistryObject<Block> NETHER_PURPI_ORE = BLOCKS
