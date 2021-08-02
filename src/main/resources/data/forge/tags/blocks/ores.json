@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "oakores:purpi_ore",
+    "oakores:lead_ore",
+    "oakores:deepslate_lead_ore",
+    "oakores:enderite_ore",
+    "oakores:nether_purpi_ore"
+  ]
+}
