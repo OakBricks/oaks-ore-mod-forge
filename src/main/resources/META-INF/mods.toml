@@ -62,3 +62,11 @@ forge does not let me use strikethrgfrwofh (idk how speel) so i just named it Oa
     versionRange="[1.17.1,1.17.2,1.17.3)"
     ordering="NONE"
     side="BOTH"
+# #Clothconfig
+# [[dependencies.oakores]]
+#     modId="cloth_config"
+#     mandatory=true
+# # This version range declares a minimum of the current minecraft version up to but not including the next major version
+#     versionRange="[1.17.1,1.17.2,1.17.3)"
+#     ordering="NONE"
+#     side="BOTH"
