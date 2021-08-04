@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oakores:blocks/lead_deepslate_ore",
-    "particle": "oakores:blocks/lead_deepslate_ore"
-  }
-}
