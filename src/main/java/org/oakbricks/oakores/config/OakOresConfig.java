@@ -56,7 +56,7 @@ public final class OakOresConfig {
 
         leadVeinSize = BUILDER.comment("Size of Lead Ore veins, default value is 16, maximum value of 64.").worldRestart().defineInRange("Lead Ore Vein Size", 16, 0, 64);
         leadAmount = BUILDER.comment("Amount of Lead Ore in a world, default value is 25, maximum value of 64.").worldRestart().defineInRange("Lead Ore Amount", 25, 0, 64);
-        leadMaxHeight = BUILDER.comment("Maximum height for Purpi Ore to generate in a world, default value is 28, maximum value of 256.").worldRestart().defineInRange("Purpi Ore Maximum Height", 256, 0, 256);
+        leadMaxHeight = BUILDER.comment("Maximum height for Lead Ore to generate in a world, default value is 256, maximum value of 256.").worldRestart().defineInRange("Lead Ore Maximum Height", 256, 0, 256);
 
         BUILDER.pop();
 
